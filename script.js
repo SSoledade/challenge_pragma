@@ -86,7 +86,6 @@ function countKills(idGame, playerWhoKilled, playerWhoDied) {
             log[idGame].status.total_kills++;
             return;
         }
-
     }
 }
 
