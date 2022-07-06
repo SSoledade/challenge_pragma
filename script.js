@@ -78,7 +78,6 @@ function countKills(idGame, playerWhoKilled, playerWhoDied) {
     for (let index = 0; index < log[idGame].status.players.length; index++) {
 
         if (log[idGame].status.players[index].id == (killFromWorld ? parseInt(playerWhoDied) : parseInt(playerWhoKilled))) {
-            console.log("achou o id:", log[idGame].status.players[index].id, "do:", killFromWorld ? parseInt(playerWhoDied) : parseInt(playerWhoKilled))
             if (killFromWorld) {
                 log[idGame].status.players[index].kills--;
             } else {
