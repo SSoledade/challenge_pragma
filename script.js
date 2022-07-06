@@ -29,7 +29,6 @@ function readLineFromTxt() {
             for (let index = 0; index < log[currentGame].status.players.length; index++) {
                 if (log[currentGame].status.players[index].id == separateLine[2]) {
                     updateNamePlayer(currentGame, [separateLine[3], separateLine[4], separateLine[5]], index)
-                    console.log("Id linha:", separateLine[2], "id index:", log[currentGame].status.players[index].id)
                     return;
                 }
             }
